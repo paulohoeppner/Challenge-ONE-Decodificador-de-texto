@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <textarea
+          class="text-area"
+          cols="41"
+          rows="4"
+          placeholder="Digite seu texto"
+        ></textarea>
+
+        <div class="informacao">
+          <h6>Apenas letras minúsculas e sem acento.</h6>
+        </div>
+
+        <div class="botoes">
+          <button class="btn-encriptar" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+          <button class="btn-desencriptar" onclick="btnDesencriptar()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <textarea
+          class="mensagem"
+          cols="20"
+          rows="13"
+          placeholder=" "
+        ></textarea>
+        <button class="btn-copiar" onclick="copiar()">Copiar</button>
+        <div class="imagem-alerta">
+          <img
+            class="boneco"
+            src="imagens/boneco.png"
+            alt="Nenhuma mensagem encontrada"
+          />
+          <img
+            class="alerta"
+            src="imagens/alerta.png"
+            alt="Nenhuma mensagem encontrada"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&#169; Desenvolvido por Paulo Hoeppner - 2023</p>
+      <p>Minhas Redes Sociais</p>
+      <a href="https://github.com/paulohoeppner" target="_blank"
+        ><img src="imagens/github.png" alt="github" width="20" height="15"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/paulo-guilherme-hoeppner/"
+        target="_blank"
+        ><img src="imagens/linkedin.png" alt="linkedin" width="20" height="15"
+      /></a>
+    </footer>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
